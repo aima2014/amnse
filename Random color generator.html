@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <title>Background Color Changer</title>
+</head>
+
+<body>
+    <h1>Click the button to change the background color!</h1>
+    <button id="changeColorButton">Change Background Color</button>
+
+    <script>
+        function changeBackgroundColor() {
+          
+            const colors = ['lightblue', 'lightgreen', 'lightcoral', 'lightgoldenrodyellow','lightpink', 'lightgray', 'lightcyan', 'lavender', 'peachpuff', 'honeydew', 'mistyrose', 'thistle', 'palegoldenrod', 'palegreen', 'paleturquoise', 'plum', 'salmon', 'sandybrown', 'seashell', 'skyblue', 'slateblue', 'springgreen', 'tan', 'wheat', 'yellowgreen', 'orchid', 'mediumaquamarine', 'mediumslateblue', 'mediumturquoise', 'mediumvioletred', 'midnightblue', 'navy', 'olive', 'peru', 'rosybrown', 'royalblue', 'sienna', 'steelblue', 'tomato', 'violet', 'coral', 'crimson', 'darkorange', 'deepskyblue', 'fuchsia', 'gold', 'indigo', 'khaki', 'lavenderblush', 'lemonchiffon', 'lightseagreen', 'magenta', 'maroon', 'orchid', 'palevioletred', 'powderblue', 'rebeccapurple', 'saddlebrown', 'slategray', 'springgreen', 'turquoise', 'violetred', 'yellow', 'azure', 'beige', 'bisque', 'burlywood', 'cadetblue', 'chartreuse', 'chocolate', 'coral', 'darkcyan', 'darkgoldenrod', 'darkkhaki', 'darkmagenta', 'darkolivegreen', 'darkorchid', 'darksalmon', 'darkseagreen', 'darkslateblue', 'darkslategray', 'darkturquoise', 'deeppink', 'deepskyblue', 'dodgerblue', 'firebrick', 'forestgreen', 'gainsboro', 'goldenrod', 'greenyellow', 'hotpink', 'indianred', 'lightgoldenrodyellow', 'lightsteelblue', 'mediumorchid', 'mediumseagreen', 'mediumslateblue', 'mediumspringgreen', 'mediumvioletred', 'midnightblue', 'navajowhite', 'oldlace', 'olivedrab', 'palegreen', 'paleturquoise', 'peru', 'powderblue', 'rosybrown', 'sandybrown', 'seagreen', 'sienna', 'skyblue', 'slateblue', 'slategray', 'springgreen', 'steelblue', 'tan', 'thistle', 'tomato', 'turquoise', 'wheat', 'yellowgreen'];
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            document.body.style.backgroundColor = randomColor;
+        }
+
+        const button = document.getElementById('changeColorButton');
+        button.addEventListener('click', changeBackgroundColor);
+    </script>
+</body>
+
+</html>
